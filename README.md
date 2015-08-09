@@ -44,6 +44,10 @@ becomes
     map2 (,) xs ys
 ```
 
+## List comprenhensions
+
+There are [no list comprehensions](https://github.com/elm-lang/elm-compiler/issues/147#issuecomment-17439271) in Elm.
+
 ## Show
 
 Elm renamed [show](http://zvon.org/other/haskell/Outputprelude/show_f.html) to [toString](http://package.elm-lang.org/packages/elm-lang/core/2.1.0/Basics#toString). Confusingly, there is also a [method called show](http://package.elm-lang.org/packages/elm-lang/core/2.1.0/Graphics-Element#show) in Elm - this generates a HTML element containing a textual representation of the data.
@@ -57,6 +61,15 @@ becomes
     toString [1, 2, 3]
 ```
 
-## List comprenhensions
+## Mod
 
-There are [no list comprehensions](https://github.com/elm-lang/elm-compiler/issues/147#issuecomment-17439271) in Elm.
+Mod in Elm uses the [`(%`) symbol](http://package.elm-lang.org/packages/elm-lang/core/2.1.0/Basics#%).
+
+Example:
+```
+    isEven x = x `mod` 2 == 0
+```
+becomes
+```
+    isEven x = x % 2 == 0
+```
