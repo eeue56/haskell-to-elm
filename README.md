@@ -15,6 +15,20 @@ becomes
     collage (round board.width) (round board.height) <| List.map (genRect board) board.pieces
 ```
 
+## Function composition
+
+Instead of using the `(.)` symbol Elm uses `<<` and `>>` for [composition in different directions](http://package.elm-lang.org/packages/elm-lang/core/2.1.0/Basics#>>)
+
+Example:
+```
+    isEvenSquareRoot = sqrt . isEven
+```
+becomes
+```
+    isEvenSquareRoot = sqrt << isEven
+    -- or
+    isEvenSquareRoot = isEven >> sqrt
+```
 
 ## Zip
 
