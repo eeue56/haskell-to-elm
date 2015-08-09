@@ -18,7 +18,7 @@ becomes
 
 ## Zip
 
-Elm has [no built-in zip](http://elm-lang.org/examples/zip) method - instead it provides a map2 function that can be used with the tuple creator `(,)` to make a list of size 2 tuples from two lists.
+Elm has [no built-in zip](http://elm-lang.org/examples/zip) method - instead it provides a [map2](http://package.elm-lang.org/packages/elm-lang/core/2.1.0/List#map2) function that can be used with the tuple creator `(,)` to make a list of size 2 tuples from two lists.
 
 Example:
 
