@@ -23,9 +23,22 @@ Elm has [no built-in zip](http://elm-lang.org/examples/zip) method - instead it 
 Example:
 
 ```
-  zip xs ys
+    zip xs ys
 ```
 becomes
 ```
-  map2 (,) xs ys
+    map2 (,) xs ys
+```
+
+## Show
+
+Elm renamed [show](http://zvon.org/other/haskell/Outputprelude/show_f.html) to [toString](http://package.elm-lang.org/packages/elm-lang/core/2.1.0/Basics#toString). Confusingly, there is also a method called [show in Elm](http://package.elm-lang.org/packages/elm-lang/core/2.1.0/Graphics-Element#show) - this generates a HTML element containing a textual representation of the data.
+
+Example:
+```
+    show [1, 2, 3]
+```
+becomes
+```
+    toString [1, 2, 3]
 ```
