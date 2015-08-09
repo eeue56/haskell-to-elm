@@ -42,3 +42,7 @@ becomes
 ```
     toString [1, 2, 3]
 ```
+
+## List comprenhensions
+
+There are [no list comprehensions](https://github.com/elm-lang/elm-compiler/issues/147#issuecomment-17439271) in Elm.
