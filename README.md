@@ -79,6 +79,13 @@ becomes
     isEven x = x % 2 == 0
 ```
 
+## Cycle
+
+Elm has no cycle built in. 
+
+
+TODO: find documentation for this
+
 # Module syntax
 
 ## Importing names
