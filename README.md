@@ -1,5 +1,8 @@
 # haskell-to-elm
 
+Collection of examples and linked documentation on places where Elm is different to Haskell.
+
+# Functional programming 
 
 ## Function application
 
@@ -48,6 +51,8 @@ becomes
 
 There are [no list comprehensions](https://github.com/elm-lang/elm-compiler/issues/147#issuecomment-17439271) in Elm.
 
+# Built-in (Prelude) methods
+
 ## Show
 
 Elm renamed [show](http://zvon.org/other/haskell/Outputprelude/show_f.html) to [toString](http://package.elm-lang.org/packages/elm-lang/core/2.1.0/Basics#toString). Confusingly, there is also a [method called show](http://package.elm-lang.org/packages/elm-lang/core/2.1.0/Graphics-Element#show) in Elm - this generates a HTML element containing a textual representation of the data.
@@ -74,9 +79,9 @@ becomes
     isEven x = x % 2 == 0
 ```
 
-## Module syntax
+# Module syntax
 
-### Importing names
+## Importing names
 
 Elm uses the [`exposing` keyword](http://elm-lang.org/docs/syntax#modules) to import names into the current namespace.
 
@@ -89,7 +94,7 @@ becomes
     import List exposing (map, foldl)
 ```
 
-### Defining exportable names
+## Defining exportable names
 
 TODO: find documentation on elm site for this
 
