@@ -86,6 +86,18 @@ Elm has no where binding - instead use [let](http://elm-lang.org/docs/syntax#let
 
 # Built-in (Prelude) methods
 
+## id
+
+Elm has renamed id to [identity](http://package.elm-lang.org/packages/elm-lang/core/2.1.0/Basics#identity)
+
+Example:
+```
+	id xs
+```
+becomes
+```
+	identity xs
+```
 ## Show
 
 Elm renamed [show](http://zvon.org/other/haskell/Outputprelude/show_f.html) to [toString](http://package.elm-lang.org/packages/elm-lang/core/2.1.0/Basics#toString). Confusingly, there is also a [method called show](http://package.elm-lang.org/packages/elm-lang/core/2.1.0/Graphics-Element#show) in Elm - this generates a HTML element containing a textual representation of the data.
