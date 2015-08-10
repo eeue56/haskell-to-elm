@@ -92,6 +92,7 @@ becomes
 ### Defining exportable names
 
 TODO: find documentation on elm site for this
+
 Following the module declaration, you must have *no* identnation level.
 
 Example:
