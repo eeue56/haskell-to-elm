@@ -101,7 +101,7 @@ becomes
 
 ## Mod
 
-Mod in Elm uses the [`(%`) symbol](http://package.elm-lang.org/packages/elm-lang/core/2.1.0/Basics#%).
+Mod in Elm uses the [`(%)` symbol](http://package.elm-lang.org/packages/elm-lang/core/2.1.0/Basics#%).
 
 Example:
 ```
