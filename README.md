@@ -51,6 +51,33 @@ becomes
 
 There are [no list comprehensions](https://github.com/elm-lang/elm-compiler/issues/147#issuecomment-17439271) in Elm.
 
+## Lenses
+
+Elm has the package [focus](http://package.elm-lang.org/packages/evancz/focus/1.0.1) for lense-like accessors. Due to a lack of template-haskell like functionality, you must always [manually create your own focus](http://package.elm-lang.org/packages/evancz/focus/1.0.1/Focus#create)
+
+Example:
+``` 
+    data Patch = Patch {
+		_colour :: Colour,
+		_size :: Double, 
+		_coord :: Coordinate
+	} deriving (Show, Eq, Ord)
+	
+	mkLabels[''Patch]
+```
+becomes
+```
+    type alias Patch = {
+        colour: Colour,
+        size: Float,
+        coord: Coordinate
+    }
+    
+    colour = create .colour (\f r -> { r | colour <- f r.colour })
+    coord = create .coord (\f r -> { r | coord <- f r.coord })
+    size = create .size (\f r -> { r | size <- f r.size })
+```
+
 # Built-in (Prelude) methods
 
 ## Show
