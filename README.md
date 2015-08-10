@@ -73,3 +73,34 @@ becomes
 ```
     isEven x = x % 2 == 0
 ```
+
+## Module syntax
+
+### Importing names
+
+Elm uses the [`exposing` keyword](http://elm-lang.org/docs/syntax#modules) to import names into the current namespace.
+
+Example:
+```
+    import List (map, foldl)
+```
+becomes
+```
+    import List exposing (map, foldl)
+```
+
+### Defining exportable names
+
+TODO: find documentation on elm site for this
+Following the module declaration, you must have *no* identnation level.
+
+Example:
+```
+    module Coords (pos) where
+        pos x y = (x, y)
+```
+becomes
+```
+    module Coords (pos) where
+    pos x y = (x, y)
+```
