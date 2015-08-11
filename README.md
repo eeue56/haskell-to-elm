@@ -4,6 +4,21 @@ Collection of examples and linked documentation on places where Elm is different
 
 # Functional programming 
 
+## Type signatures
+
+Elm uses a [single colon `(:)`](http://elm-lang.org/docs/syntax#type-annotations) for type signatures. Double colons `(::)` is used for [cons](http://package.elm-lang.org/packages/elm-lang/core/2.1.0/List#::).
+
+Example
+
+```
+	add :: Int -> Int
+```
+
+becomes
+```
+	add : Int -> Int
+```
+
 ## Function application
 
 Instead of using the dollar symbol `$` elm uses `<|` and `|>`  for [application in different directions](http://package.elm-lang.org/packages/elm-lang/core/2.1.0/Basics#|>). 
@@ -98,6 +113,20 @@ becomes
 ```
 	identity xs
 ```
+
+## cons
+
+Elm uses [double colons `(::)`](http://package.elm-lang.org/packages/elm-lang/core/2.1.0/List#::) for cons.
+
+Example
+```
+	5 : 6 : [7, 8]
+```
+becomes
+```
+	5 :: 6 :: 7 :: [7. 8]
+```
+
 ## Show
 
 Elm renamed [show](http://zvon.org/other/haskell/Outputprelude/show_f.html) to [toString](http://package.elm-lang.org/packages/elm-lang/core/2.1.0/Basics#toString). Confusingly, there is also a [method called show](http://package.elm-lang.org/packages/elm-lang/core/2.1.0/Graphics-Element#show) in Elm - this generates a HTML element containing a textual representation of the data.
