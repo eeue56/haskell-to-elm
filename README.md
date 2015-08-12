@@ -2,6 +2,24 @@
 
 Collection of examples and linked documentation on places where Elm is different to Haskell.
 
+* [Functional Programming](#functional-programming)
+	* [Type signatures](#type-signatures)
+	* [Function application](#function-application)
+	* [Function composition](#function-composition)
+	* [Zip](#zip)
+	* [List comprehensions](#list-comprenhensions)
+	* [Lenses](#lenses)
+	* [Where](#where-vs-let)
+* [Prelude functions](#built-in-prelude-methods)
+	* [id](#id)
+	* [cons](#cons)
+	* [show](#show)
+	* [mod](#mod)
+	* [cycle](#cycle)
+* [Modules](#module-syntax)
+	* [Importing](importing-names)
+	* [Exporting](defining-exportable-names)
+
 # Functional programming 
 
 ## Type signatures
