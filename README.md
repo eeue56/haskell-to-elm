@@ -17,8 +17,8 @@ Collection of examples and linked documentation on places where Elm is different
 	* [mod](#mod)
 	* [cycle](#cycle)
 * [Modules](#module-syntax)
-	* [Importing](importing-names)
-	* [Exporting](defining-exportable-names)
+	* [Importing](#importing-names)
+	* [Exporting](#defining-exportable-names)
 
 # Functional programming 
 
