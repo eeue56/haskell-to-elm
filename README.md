@@ -1,6 +1,8 @@
 # haskell-to-elm
 
-Collection of examples and linked documentation on places where Elm is different to Haskell.
+Collection of examples on places where Elm is different to Haskell.
+
+Used for helping beginners moving from Haskell to Elm. Non-exhaustive list, only to be used alongside the documentation on the [Elm](elm-lang.org) site.
 
 * [Functional Programming](#functional-programming)
 	* [Type signatures](#type-signatures)
