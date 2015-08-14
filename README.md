@@ -161,9 +161,9 @@ becomes
     toString [1, 2, 3]
 ```
 
-## Mod
+## mod
 
-Mod in Elm uses the [`(%)` symbol](http://package.elm-lang.org/packages/elm-lang/core/2.1.0/Basics#%).
+mod in Elm uses the [`(%)` symbol](http://package.elm-lang.org/packages/elm-lang/core/2.1.0/Basics#%).
 
 Example:
 ```
@@ -174,7 +174,20 @@ becomes
     isEven x = x % 2 == 0
 ```
 
-## Cycle
+## unwords
+
+unwords is replaced by the [join function](http://package.elm-lang.org/packages/elm-lang/core/2.1.0/String#join)
+
+Example:
+```
+	unwords $ words "Hello Dave and Jeremy"
+```
+becomes
+```
+	join " " <| words "Hello Dave and Jeremy"
+```
+
+## cycle
 
 Elm has no cycle built in. 
 
