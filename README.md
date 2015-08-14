@@ -17,6 +17,7 @@ Used for helping beginners moving from Haskell to Elm. Non-exhaustive list, only
 	* [zip](#zip)
 	* [show](#show)
 	* [mod](#mod)
+	* [unwords](#unwords)
 	* [cycle](#cycle)
 * [Modules](#module-syntax)
 	* [Importing](#importing-names)
