@@ -52,6 +52,8 @@ Example:
 becomes
 ```
     collage (round board.width) (round board.height) <| List.map (genRect board) board.pieces
+    --
+    List.map (genRect board) board.pieces |> collage (round board.width) (round board.height)
 ```
 
 ## Function composition
