@@ -14,6 +14,7 @@ Used for helping beginners moving from Haskell to Elm. Non-exhaustive list, only
 * [Prelude functions](#built-in-prelude-methods)
 	* [id](#id)
 	* [cons](#cons)
+	* [tail](#tail)
 	* [zip](#zip)
 	* [show](#show)
 	* [mod](#mod)
@@ -134,6 +135,21 @@ Example
 becomes
 ```
 	5 :: 6 :: 7 :: [7. 8]
+```
+
+## tail
+
+Instead of throwing errors for empty lists, Elm uses Maybe for [tail](http://package.elm-lang.org/packages/elm-lang/core/2.1.0/List#tail)
+
+Example
+```
+	tail [4, 5] == [5]
+```
+becomes
+```
+	case tail [4, 5] of
+		Just x -> x == [5]
+		Nothing -> False
 ```
 
 ## zip
