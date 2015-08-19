@@ -110,6 +110,22 @@ becomes
 
 Elm has no where binding - instead use [let](http://elm-lang.org/docs/syntax#let-expressions)
 
+## Pattern matching
+
+Elm doesn't support multiple body declarations for functions, so instead you have to use [case..of](http://elm-lang.org/docs/syntax#conditionals)
+
+Example:
+```
+	head [] = error
+	head (X:xs) = x
+```
+becomes
+```
+	head xs = case xs of
+  		x::xs -> Just x
+  		[] -> Nothing
+```
+
 # Built-in (Prelude) methods
 
 ## id
