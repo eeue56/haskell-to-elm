@@ -21,6 +21,7 @@ Used for helping beginners moving from Haskell to Elm. Non-exhaustive list, only
 	* [mod](#mod)
 	* [unwords](#unwords)
 	* [cycle](#cycle)
+	* [foldl](#foldl)
 * [Modules](#module-syntax)
 	* [Importing](#importing-names)
 	* [Exporting](#defining-exportable-names)
@@ -244,6 +245,19 @@ Elm has no cycle built in.
 
 
 TODO: find documentation for this
+
+## foldl
+
+The order of the accumalator function arguments are [swapped in Elm](http://package.elm-lang.org/packages/elm-lang/core/2.1.0/Set#foldl).
+
+Example:
+```
+	idx xs = foldl (\x y -> y : x) [] xs
+```
+becomes
+```
+	id xs = List.foldl (\x y -> x :: y) xs [] 
+```
 
 # Module syntax
 
