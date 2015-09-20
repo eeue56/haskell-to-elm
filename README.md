@@ -127,6 +127,10 @@ becomes
   		[] -> Nothing
 ```
 
+## Purity
+
+Functions in Elm as of 0.15.1 have pure type signatures. However, as they are actually implented in JS, it's possible that the underlying code you're calling isn't pure. This gives the effect of Elm the language being pure, but the things it can be used to do can be impure (eg, drawing to screen). Native functions can also produce runtime errors, though there is a drive to rid these from Elm entirely.
+
 # Built-in (Prelude) methods
 
 ## id
