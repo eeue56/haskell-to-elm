@@ -11,6 +11,7 @@ Used for helping beginners moving from Haskell to Elm. Non-exhaustive list, only
 	* [List comprehensions](#list-comprenhensions)
 	* [Lenses](#lenses)
 	* [Where](#where-vs-let)
+	* [Purity](#purity)
 * [Prelude functions](#built-in-prelude-methods)
 	* [id](#id)
 	* [cons](#cons)
