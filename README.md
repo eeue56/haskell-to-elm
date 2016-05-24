@@ -66,13 +66,13 @@ Instead of using the `(.)` symbol Elm uses `<<` and `>>` for [composition in dif
 
 Example:
 ```
-    isEvenSquareRoot = sqrt . isEven
+    isEvenSquareRoot = isEven . sqrt
 ```
 becomes
 ```
-    isEvenSquareRoot = sqrt << isEven
+    isEvenSquareRoot = sqrt >> isEven
     -- or
-    isEvenSquareRoot = isEven >> sqrt
+    isEvenSquareRoot = isEven << sqrt
 ```
 
 ## List comprenhensions
