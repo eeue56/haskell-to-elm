@@ -103,9 +103,9 @@ becomes
         coord: Coordinate
     }
     
-    colour = create .colour (\f r -> { r | colour <- f r.colour })
-    coord = create .coord (\f r -> { r | coord <- f r.coord })
-    size = create .size (\f r -> { r | size <- f r.size })
+    colour = create .colour (\f r -> { r | colour = f r.colour })
+    coord = create .coord (\f r -> { r | coord = f r.coord })
+    size = create .size (\f r -> { r | size = f r.size })
 ```
 
 ## where vs let
@@ -292,6 +292,6 @@ Example:
 ```
 becomes
 ```
-    module Coords (pos) where
+    module Coords exposing (pos)
     pos x y = (x, y)
 ```
